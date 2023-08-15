@@ -1,0 +1,63 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #e3d3f5;
+}
+
+header {
+    position: absolute;
+    z-index: 5;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav {}
+
+.navbar-brand {
+    color: #421475;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.nav-link {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.nav-link.active {
+    color: yellow;
+}
+
+.landing {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: red;
+    background: url(/landing-img.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-txt {
+    text-align: center;
+    color: #fff;
+    z-index: 5;
+    font-size: 4rem;
+}
+
+.landing::after {
+    position: absolute;
+    background: rgba(66, 20, 117, 0.3);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: " ";
+}
