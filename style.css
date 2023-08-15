@@ -7,10 +7,10 @@ body {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 5;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 h2 {
@@ -91,12 +91,23 @@ h2 {
     margin: 0 auto;
 }
 
+.top-rated {
+    padding: 2rem 0;
+}
+
 .fa-solid {
     font-size: 3rem;
     text-align: center;
     padding-top: 0.5rem;
     color: #421475;
 }
+
+.cards-wrapper {
+    display: flex;
+
+}
+
+
 
 @media only screen and (min-width: 768px) {
     .cards {
