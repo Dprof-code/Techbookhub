@@ -8,16 +8,14 @@ body {
 
 header {
     position: absolute;
+    width: 100%;
     z-index: 5;
-    width: 100vw;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
 h2 {
     text-align: center;
 }
-
-nav {}
 
 .navbar-brand {
     color: #421475;
@@ -41,41 +39,39 @@ nav {}
 
 .landing {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: url(/landing-img.avif);
     background-repeat: no-repeat;
     background-size: cover;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .landing-txt {
-    text-align: center;
-    color: #fff;
-    z-index: 5;
-    font-size: 4rem;
+    z-index: 3;
+}
 
+.landing-txt-h {
+    color: #fff;
 }
 
 .landing-txt-p {
     text-align: center;
-    font-size: 2rem;
     color: #fff;
-    z-index: 5;
-
 }
 
 .tbh {
     color: #421475;
+    background-color: #fff;
 }
 
 .landing::after {
+    max-width: 100%;
+    height: 100%;
     position: absolute;
-    background: rgba(66, 20, 117, 0.3);
+    background: rgba(66, 20, 117, 0.4);
     top: 0;
     right: 0;
     bottom: 0;
