@@ -13,6 +13,10 @@ header {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+h2 {
+    text-align: center;
+}
+
 nav {}
 
 .navbar-brand {
@@ -31,16 +35,20 @@ nav {}
     color: yellow;
 }
 
+.btn-outline-success {
+    border: 3px solid #421475;
+}
+
 .landing {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: red;
     background: url(/landing-img.avif);
     background-repeat: no-repeat;
     background-size: cover;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -50,6 +58,19 @@ nav {}
     color: #fff;
     z-index: 5;
     font-size: 4rem;
+
+}
+
+.landing-txt-p {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    z-index: 5;
+
+}
+
+.tbh {
+    color: #421475;
 }
 
 .landing::after {
